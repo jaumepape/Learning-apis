@@ -13,7 +13,9 @@ user_name = input ("Ingrese su usuario: ")
 password = input ("Ingrese su contraseña: ")
 
 if validate_user(user_name, password) is not None:
-    print ("Bienvenido al sistema")
-    print (validate_user(user_name, password))
+    jwt = validate_user(user_name, password)
 else:
-    print ("Credenciales incorrectas")
+    exit("Credenciales incorrectas")
+
+print("Bienvenido al sistema")
+print(jwt)
