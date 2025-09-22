@@ -9,13 +9,11 @@ def validate_user (user_name, password):
     else:
         return None
 
-user_name = input ("Ingrese su usuario: ")
-password = input ("Ingrese su contraseña: ")
+user_name_input = input ("Ingrese su usuario: ")
+password_input = input ("Ingrese su contraseña: ")
 
-if validate_user(user_name, password) is not None:
-    jwt = validate_user(user_name, password)
-else:
-    exit("Credenciales incorrectas")
-
-print("Bienvenido al sistema")
-print(jwt)
+jwt = validate_user (user_name_input, password_input)
+if jwt is None:
+    exit ("Credenciales incorrectas")
+print ("Bienvenido al sistema")
+print (jwt)
