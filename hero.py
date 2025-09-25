@@ -1,12 +1,12 @@
-# Importe del módulo json para formatear y trabajar con datos JSON
+# Importe del módulo json para formatear y trabajar con datos JSON (Python)
 import json
 
-# Importe de la librería requests para hacer solicitudes HTTP
+# Importe de la librería requests para hacer solicitudes HTTP (externo)
 import requests
 
-# Importe de constantes necesarias desde el archivo constants.py
+# Importe de constantes necesarias desde el archivo constants.py (propio)
 from constants import PASSWORD, USER_NAME, API_BASE_URL, HERO_ENDPOINT
-# Importe de la función validate_user desde user_service.py
+# Importe de la función validate_user desde user_service.py (propio)
 from user_service import validate_user
 
 # Autentificación del usuario utilizando su nombre de usuario y contraseña
